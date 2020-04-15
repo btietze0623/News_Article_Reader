@@ -14,7 +14,7 @@ IDF(t) = log_e(Total number of documents / Number of documents with term t in it
 The tf-idf score is the product of those equations.
 TF-IDF(t) = TF(t) * IDF(t)
 
-I created this code through a Codecademy course, and made my own modifications to improve the output. Primarily, I extended the results of the tf-idf test from 1 word to n = 15. I have used an existing preprocessing.py script that codecademy built. This script lemmatizes, tokenizes, normalizes the corpus. I wrote previous code that did this in the News-Scraper-Topic-Analyzer respository
+I created this code through a Codecademy course, and made my own modifications to improve the output. Primarily, I extended the results of the tf-idf test from 1 word to n = 15. I have used an existing preprocessing.py script that codecademy built. This script lemmatizes, tokenizes, normalizes the corpus. I wrote previous code that did this in the News-Scraper-Topic-Analyzer respository. In using n = 1, I found the tf-idf result to not have much insight and frequently be wrong, but in using 15 this gives a better picture of the topics discussed in the article.
 
 This repository has 3 scripts. Read_articles.py, articles.py, and preprocessing.py. Articles contains 10 articles that I found online. Read_articles.py runs the tf-idf analysis and calls the preprocessing functions from preprocessing.py.
 
