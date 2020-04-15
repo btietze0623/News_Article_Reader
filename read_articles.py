@@ -61,22 +61,9 @@ try:
 except:
   pass
 
-try:
-  df_tf_idf = pd.DataFrame(tfidf_scores.T.todense(), index=feature_names, columns=article_index)
-  print(df_tf_idf)
-except:
-  pass
-
-"""
-filename = "DF-TF-IDF.csv"
-f = open(filename, "w")
-
-f.write(df_tf_idf + "\n")
-"""
 
 # get highest scoring tf-idf term for each article
 for i in range(1,len(articles)+1):
   print(df_tf_idf[[f'Article {i}']].idxmax())
   n = 15
   print(df_tf_idf[[f'Article {i}']].nlargest(n,f'Article {i}'))
-  
