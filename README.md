@@ -39,7 +39,7 @@ counts = vectorizer.fit_transform(processed_articles)
 ```
 
 
-## Apply tf-idf vectorization and create tf-idf score dataframe
+## Apply tf-idf vectorization to create scores
 
 ```
 # convert counts to tf-idf
@@ -71,7 +71,11 @@ try:
   article_index = [f"Article {i+1}" for i in range(len(articles))]
 except:
   pass
+```
 
+## Create dataframes (one for term frequency and another for tf-idf scores)
+
+```
 
 # create pandas DataFrame with word counts - this is term frequency
 try:
@@ -87,11 +91,6 @@ try:
 except:
   pass
 
-try:
-  df_tf_idf = pd.DataFrame(tfidf_scores.T.todense(), index=feature_names, columns=article_index)
-  print(df_tf_idf)
-except:
-  pass
 
 ```
 
