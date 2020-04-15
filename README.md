@@ -94,7 +94,7 @@ except:
 
 ```
 
-## Print tf-idf output for the top 15 results
+## Print tf-idf output for the top 15 results per article
 
 ```
 #get highest scoring tf-idf term for each article
