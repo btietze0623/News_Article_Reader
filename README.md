@@ -6,7 +6,7 @@ Let's say you want to get the most relevant words of a news article without actu
 A tf-idf analysis 
 
 TF(t) = (Number of instances term t in a single document) / (Total number of terms in the document)
--this measures the count of the term t in a document, similar to an ngram analysis
+-this measures the count of the term t in a document, similar to a bag of words analysis
 
 IDF(t) = log_e(Total number of documents / Number of documents with term t in it)
 -this measures how important the term t is to the specific document.
